@@ -38,3 +38,4 @@ ver2.vertesana_info_print()
 print(ver3.darbaId)
 ver3.vertesanas_info()
 ver3.vertesana_info_print()
+#https://github.com/M4rakesh/uzd/blob/main/lidz_frizeretevai.py
