@@ -29,10 +29,15 @@ class Krit:
     p_kriterijs=""
     o_kriterijs=""
     t_kriterijs=""
+    id_iter_k1=itertools.count()
     def __init__(self,p_k,o_k,t_k):
         self.p_kriterijs = p_k
         self.o_kriterijs = o_k
         self.t_kriterijs = t_k
+    def krit_info(self):
+        print("Pirmais kriterijs:"+self.p_kriterijs)
+        print("otrais kriterijs:"+ self.o_kriterijs)
+        print("trešāis kriterijs:"+self.t_kriterijs)
 
 ver1=Vertesana("Marija","Aleksejs","priogrammešāna")
 ver2=Vertesana("Aleksandrs","Mihail","Angļu valoda")
