@@ -6,29 +6,37 @@ from datetime import time
 class Vertesana:
     parbauditaja_v=""
     skolena_v=""
-    p_kriterijs=""
-    o_kriterijs=""
+    prieksmets=""
 
+    
     id_iter=itertools.count()
-    def __init__(self,pad_v=None,skol_v=None,p_k=None,o_k=None):
+    def __init__(self,pad_v=None,skol_v=None,priek=None,):
         self.darbaId =next(self.id_iter)+1
         self.parbauditaja_v = pad_v
         self.skolena_v = skol_v
-        self.p_kriterijs = p_k
-        self.o_kriterijs = o_k
+        self.prieksmets = priek
 
     def vertesanas_info(self):
-        return [self.parbauditaja_v,self.skolena_v,self.p_kriterijs,self.o_kriterijs]
+        return [self.parbauditaja_v,self.skolena_v,self.prieksmets]
         
     def vertesana_info_print(self):
         print("Parbauditaja vards:"+ str(self.parbauditaja_v))
         print("Skolena vards:"+str(self.skolena_v))
-        print("pirmais kriterijs:"+str(self.p_kriterijs))
-        print("otrais kriterijs:"+str(self.o_kriterijs))
+        print("Priekšmets:"+str(self.prieksmets))
+        
 
-ver1=Vertesana("Marija","Aleksejs","Saturs","Struktura")
-ver2=Vertesana("Aleksandrs","Mihail","Valodas lietošāna","Grammatika")
-ver3=Vertesana("Emma","Ksenija","Saturs","Grammtika")
+class Krit:
+    p_kriterijs=""
+    o_kriterijs=""
+    t_kriterijs=""
+    def __init__(self,p_k,o_k,t_k):
+        self.p_kriterijs = p_k
+        self.o_kriterijs = o_k
+        self.t_kriterijs = t_k
+
+ver1=Vertesana("Marija","Aleksejs","priogrammešāna")
+ver2=Vertesana("Aleksandrs","Mihail","Angļu valoda")
+ver3=Vertesana("Emma","Ksenija","Latviešu valoda")
 print(ver1.darbaId)
 ver1.vertesanas_info()
 ver1.vertesana_info_print()
@@ -38,4 +46,4 @@ ver2.vertesana_info_print()
 print(ver3.darbaId)
 ver3.vertesanas_info()
 ver3.vertesana_info_print()
-#https://github.com/M4rakesh/uzd/blob/main/lidz_frizeretevai.py
+#https://github.com/M4rakesh/uzd/blob/main/mechta.py
