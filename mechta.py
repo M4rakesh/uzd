@@ -47,7 +47,7 @@ kri1=Krit("Saturs","Grammatika","Vardu krajums")
 kri2=Krit("Saturs","Grammatika","Vardu krajums")
 kri3=Krit("Saturs","Grammatika","Vardu krajums")
 
-ver1=Vertesana("Marija","Aleksejs","priogrammešāna")
+ver1=Vertesana("Marija","Aleksejs","programmešāna")
 ver2=Vertesana("Aleksandrs","Mihail","Angļu valoda")
 ver3=Vertesana("Emma","Ksenija","Latviešu valoda")
 print(ver1.darbaId)
